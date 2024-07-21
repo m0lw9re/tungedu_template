@@ -1,0 +1,767 @@
+doctype html
+head
+  meta(charset='utf-8')
+  title Knowledge Template
+  meta(name="viewport" content="initial-scale=1.0, width=device-width")
+  meta(name='description' content='')
+  meta(name='keywords' content='')
+  meta(name='author' content='')
+  // Facebook and Twitter integration
+  meta(property='og:title' content='')
+  meta(property='og:image' content='')
+  meta(property='og:url' content='')
+  meta(property='og:site_name' content='')
+  meta(property='og:description' content='')
+  meta(name='twitter:title' content='')
+  meta(name='twitter:image' content='')
+  meta(name='twitter:url' content='')
+  meta(name='twitter:card' content='')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,300&display=swap' rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900' rel='stylesheet')
+  link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous")
+  link(rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css")
+  link(rel="stylesheet" href="../plugins/css/flexslider.css")
+  link(rel="stylesheet" href="../plugins/css/magnific-popup.css")
+  link(rel="stylesheet" href="../plugins/fonts/flaticon/font/flaticon.css")
+  link(rel="stylesheet" href="../plugins/css/icomoon.css")
+  link(rel="stylesheet" href="../plugins/css/animate.css")
+  // Owl Carousel
+  link(rel='stylesheet' href='../plugins/css/owl.carousel.min.css')
+  link(rel='stylesheet' href='../plugins/css/owl.theme.default.min.css')
+  link(rel='stylesheet' href='css/style.css')  
+  script(src='../plugins/js/modernizr-2.6.2.min.js')
+body 
+  header.header_area
+    .top-menu
+      .container
+        .float-start 
+          ul.list.header_social
+            li
+              a(href='#')
+                i.fab.fa-facebook-f
+            li
+              a(href='#')
+                i.fab.fa-twitter
+            li
+              a(href='#')
+                i.fab.fa-google
+            li
+              a(href='#')
+                i.fab.fa-telegram-plane
+        .float-end 
+          a.dn_btn(href='tel:+4400123654896') +440 012 3654 896
+          a.dn_btn(href='mailto:support@colorlib.com') support@colorlib.com
+    .main_menu
+      nav.navbar.navbar-expand-lg.navbar-light
+        .container
+          a.navbar-brand.logo_h(href='index.html')
+            img(src='../build/images/logo.png' alt='')
+          button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          #navbarSupportedContent.collapse.navbar-collapse.offset
+            ul.nav.navbar-nav.menu_nav.ml-auto
+              li.nav-item.active
+                a.nav-link(href='index.html') Học theo lộ trình
+              li.nav-item
+                a.nav-link(href='about-us.html') Thư viện
+              li.nav-item.submenu.dropdown
+                a.nav-link.dropdown-toggle(href='#' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false') Diễn đàn
+                ul.dropdown-menu
+                  li.nav-item
+                    a.nav-link(href='courses.html')
+                  li.nav-item
+                    a.nav-link(href='course-details.html')  Diễn đàn
+              li.nav-item.submenu.dropdown
+                a.nav-link.dropdown-toggle(href='#' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false') Việc làm
+                ul.dropdown-menu
+                  li.nav-item
+                    a.nav-link(href='elements.html') Elements
+              li.nav-item.submenu.dropdown
+                a.nav-link.dropdown-toggle(href='#' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false') Hỏi đáp
+                ul.dropdown-menu
+                  li.nav-item
+                    a.nav-link(href='blog.html') Việc làm
+                  li.nav-item
+                    a.nav-link(href='single-blog.html') Blog Details
+              li.nav-item
+                a.nav-link(href='contact.html') Liên hệ
+  section.home_banner_area
+    aside#colorlib-hero
+      .flexslider
+        ul.slides
+          li(style='background-image: url("../build/images/banner-top.png")')
+            .overlay
+          li(style='background-image: url("../build/images/banner-top-1.png")')
+            .overlay
+          li(style='background-image: url("../build/images/banner-top-2.png")')
+            .overlay
+          li(style='background-image: url("../build/images/banner-top-3.png")')
+            .overlay
+    aside#top-head.landing-section
+      .container
+        .row 
+          .col
+            .wrap-form-head-register
+              .form-head-register
+                h4.title-block Đăng ký ngay
+                form#frmSignup(method='POST' action='/')
+                  .form-group
+                    input.form-control(name='username' type='text' placeholder='Tên đăng nhập' autocomplete='username')
+                  .form-group
+                    input.form-control(name='email' type='email' placeholder='Email' autocomplete='email')
+                  .form-group
+                    input.form-control(name='password' type='password' placeholder='Mật khẩu' autocomplete='current-password')
+                  .form-check
+                    .checkbox-area
+                      input#cbAgree.form-check-input(name='cbAgree' type='checkbox' value='1' data-error='#blockcbAgree-error')
+                      label.form-check-label(for='cbAgree')
+                        | Đăng ký 
+                        a(href='/terms' target='_blank') &Dstrok;i&#x1EC1;u kho&#x1EA3;n
+                        |  của TungEdu
+                    #blockcbAgree-error
+                  button.btn.btn-default.btn-block.btn-blue.btn-signup(type='submit') &Dstrok;&abreve;ng k&yacute;
+                .switch-type-login ho&#x1EB7;c s&#x1EED; d&#x1EE5;ng t&agrave;i kho&#x1EA3;n kh&aacute;c
+                .signin-options                  
+                  button.btn.btn-default.btn-block.btn--facebook.icon-left(onclick='facebookSignIn()' title='Tiếp tục với Facebook')
+                    i.fab.fa-facebook-f(aria-hidden='true')
+                  button.btn.btn-default.btn-block.btn--google.icon-left.btn-google-login(title='Tiếp tục với Google')
+                    i.fab.fa-google(aria-hidden='true')
+                  button.btn.btn-default.btn-block.btn--microsoft.icon-left(onclick="window.location.replace('https://oauth.codelearn.io/Home/SignIn')" title='Tiếp tục tài khoản FSoft qua Microsoft')
+                    i.fab.fa-windows(aria-hidden='true')
+          .col 
+            .wrap-block-head-text
+              .form-head-register
+                .wrap-image
+                  img(src="../build/images/dri2.gif" alt="")
+                  .block-head-text
+                    h1
+                      | Học để khởi nghiệp 4.0
+                    p Khởi đầu dễ dàng hơn với TungEdu
+                    p Hệ thống học lập trình trực tuyến qua dự án thực tế
+                    ul 
+                      li Phát triển tư duy sáng tạo
+                      li Làm quen thế giới công nghệ
+                      li Mở rộng cơ hội nghề nghiệp
+                      li Cộng đồng đông đảo, năng động
+                      li Đội ngũ nhiệt tình, có chuyên môn
+                      li Hệ thống mạnh mẽ, hiện đại
+  section.category 
+    aside#colorlib-services
+      .container
+        .row
+          .col-md-12.services-wrap
+            .row 
+              .col-md-2.col-sm-6.text-center.animate-box
+                a.services(href='services.html')
+                  span.icon
+                    i.flaticon-desktop
+                  .desc
+                    h3
+                      | Web 
+                      br
+                      | Development
+              .col-md-2.col-sm-6.text-center.animate-box
+                a.services(href='services.html')
+                  span.icon
+                    i.flaticon-smartphone
+                  .desc
+                    h3
+                      | Mobile 
+                      br
+                      | Development
+              .col-md-2.col-sm-6.text-center.animate-box
+                a.services(href='services.html')
+                  span.icon
+                    i.flaticon-laboratory
+                  .desc
+                    h3
+                      | Science 
+                      br
+                      | Data
+              .col-md-2.col-sm-6.text-center.animate-box
+                a.services(href='services.html')
+                  span.icon
+                    i.flaticon-computer-graphic
+                  .desc
+                    h3
+                      | Media 
+                      br
+                      | Courses
+  section.colorlib-classes
+    .container-fluid
+      .row 
+        .col-md-12.colorlib-heading.center-heading.text-center.animate-box
+          h1.heading-big Kho khóa học khủng
+          h2 Kho khóa học khủng
+      .row 
+        .col-md-12.animate-box
+          .owl-carousel
+            .item
+              .classes
+                .classes-img(style='background-image: url(../build/images/classes-1.jpg);')
+                .wrap
+                  .desc
+                    span.teacher David Clarson
+                    h3
+                      a(href='#') Developing Mobile Apps Using Ruby on Rails
+                  .pricing
+                    p
+                      span.price $150
+                      span.price.old-price $250
+                      span.more
+                        a(href='#')
+                          i.icon-link
+            .item
+              .classes
+                .classes-img(style='background-image: url(../build/images/classes-2.jpg);')
+                .wrap
+                  .desc
+                    span.teacher David Clarson
+                    h3
+                      a(href='#') Developing Mobile Apps Using Ruby on Rails
+                  .pricing
+                    p
+                      span.price $150
+                      span.price.old-price $250
+                      span.more
+                        a(href='#')
+                          i.icon-link
+            .item
+              .classes
+                .classes-img(style='background-image: url(../build/images/classes-3.jpg);')
+                .wrap
+                  .desc
+                    span.teacher David Clarson
+                    h3
+                      a(href='#') Developing Mobile Apps Using Ruby on Rails
+                  .pricing
+                    p
+                      span.price $150
+                      span.price.old-price $250
+                      span.more
+                        a(href='#')
+                          i.icon-link
+            .item
+              .classes
+                .classes-img(style='background-image: url(../build/images/classes-5.jpg);')
+                .wrap
+                  .desc
+                    span.teacher David Clarson
+                    h3
+                      a(href='#') Developing Mobile Apps Using Ruby on Rails
+                  .pricing
+                    p
+                      span.price $150
+                      span.price.old-price $250
+                      span.more
+                        a(href='#')
+                          i.icon-link
+  section#colorlib-counter.colorlib-counters
+    .container
+      .row
+        .col-md-7
+          .about-desc
+            .about-img-1.animate-box(style='background-image: url(../build/images/about-img-2.jpg);')
+            .about-img-2.animate-box(style='background-image: url(../build/images/about-img-1.jpg);')
+        .col-md-5
+          .row
+            .col-md-12.colorlib-heading.animate-box
+              h1.heading-big Who are we
+              h2 Who are we
+          .row
+            .col-md-12.animate-box
+              p
+                strong(style='font-size:20px;') Even the all-powerful Pointing has no control about the blind texts
+              p(style="font-weight: 300;color: black;font-size: 16px;")
+                | Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
+            .col-md-6.col-sm-6.animate-box
+              .counter-entry
+                .desc
+                  span.colorlib-counter.js-counter(data-from='0' data-to='1539' data-speed='5000' data-refresh-interval='50') 1539
+                  span.colorlib-counter-label Courses
+            .col-md-6.col-sm-6.animate-box
+              .counter-entry
+                .desc
+                  span.colorlib-counter.js-counter(data-from='0' data-to='3653' data-speed='5000' data-refresh-interval='50') 3653
+                  span.colorlib-counter-label Students
+            .col-md-6.col-sm-6.animate-box
+              .counter-entry
+                .desc
+                  span.colorlib-counter.js-counter(data-from='0' data-to='2300' data-speed='5000' data-refresh-interval='50') 2300
+                  span.colorlib-counter-label Teachers online
+            .col-md-6.col-sm-6.animate-box
+              .counter-entry
+                .desc
+                  span.colorlib-counter.js-counter(data-from='0' data-to='200' data-speed='5000' data-refresh-interval='50') 200
+                  span.colorlib-counter-label Countries
+  section.colorlib-classes
+    .container
+      .row
+        .col-md-12.colorlib-heading.center-heading.text-center.animate-box
+          h1.heading-big Our Courses
+          h2 Our Courses
+      .row
+        article.course-item.col-12.col-md-4.col-lg-3
+          .wrap-course-item
+            .course-thumb
+              a(href='/learning/truyen-thong-va-mang-may-tinh' title='Truyền thông và Mạng máy tính')
+                img(src='../build/images/c6b8d5cfe9ff4b56887e8751d37a1c61.png' alt='Truyền thông và Mạng máy tính')
+              .cl-badge.hot
+                span Nổi bật
+            .view-content.animate-box
+              .view-content-header
+                span.star-rating
+                  span(style='width:90.0%')
+                span.avg-rate 4.5 (120)
+                span.course-type.online
+                  | Online
+              h3.course-title
+                a(title='Truyền thông và Mạng máy tính' href='/learning/truyen-thong-va-mang-may-tinh') Lập trình ASP.NET qua dự án thực tế
+              a.course-author(href='/profile/347285' title='ducnm46') ducnm46
+              p.course-description
+                | Kh&oacute;a h&#x1ECD;c cung c&#x1EA5;p cho l&#x1EAD;p tr&igrave;nh vi&ecirc;n nh&#x1EEF;ng ki&#x1EBF;n th&#x1EE9;c c&#x1A1; b&#x1EA3;n v&agrave; d&#x1EC5; hi&#x1EC3;u v&#x1EC1; m&#x1EA1;ng m&aacute;y t&iacute;nh v&agrave; truy&#x1EC1;n th&ocirc;ng d&#x1EEF; li&#x1EC7;u.
+              .view-content-footer
+                .course-footer-left
+                  span Free               
+            .popover-course
+              a(href='/learning/truyen-thong-va-mang-may-tinh' title='Truyền thông và Mạng máy tính')
+                h3.popover-course__title Truy&#x1EC1;n th&ocirc;ng v&agrave; M&#x1EA1;ng m&aacute;y t&iacute;nh
+              .popover-course__sum
+                .author
+                  img(src='https://codelearn.io/CodeCamp/CodeCamp/Upload/Avatar/a76638850ecc4722b76d255e9cdd462f.jpg' alt='ducnm46')
+                  a.user-name(href='/profile/347285' title='ducnm46') ducnm46
+                span.rate-wrap
+                  span.star-rating
+                    span(style='width:90.0%')
+                  span.avg-rate 4.5
+                  span.total-rate (120)
+              .popover-course__info
+                span Cập nhât 
+                  span lúc 7/12/2021
+                ul.more-info
+                  li 
+                    span Total 4 hours 
+                  li 
+                    span Intermediate Leve
+                  li 
+                    span Subtitle
+                .description 
+                  p Khóa học cung cấp cho lập trình viên những kiến thức cơ bản và dễ hiểu, được ứng dụng nhiều nhất trong
+              ul.popover-course__detail-infor
+                li
+                  p
+                    i.fas.fa-globe-americas
+                    |  Online
+                li
+                  p
+                    i.fas.fa-users
+                    |  16840 học viên
+                li
+                  p
+                    i.fas.fa-star
+                    |  Đánh giá tuyệt vời từ học viên
+                li
+                  p
+                    i.fas.fa-clock
+                    |  Thời gian học
+                    strong 18 gi&#x1EDD;
+              .course__button 
+                button.btn.btn-buy-now Mua ngay
+                button.btn.btn-add-to-card 
+                  i.fas.fa-cart-plus
+        article.course-item.col-12.col-md-4.col-lg-3
+          .wrap-course-item
+            .course-thumb
+              a(href='/learning/truyen-thong-va-mang-may-tinh' title='Truyền thông và Mạng máy tính')
+                img(src='../build/images/c6b8d5cfe9ff4b56887e8751d37a1c61.png' alt='Truyền thông và Mạng máy tính')
+              .cl-badge.hot
+                span Nổi bật
+            .view-content.animate-box
+              .view-content-header
+                span.star-rating
+                  span(style='width:90.0%')                 
+                span.course-type.online
+                  | Online
+              h3.course-title
+                a(title='Truyền thông và Mạng máy tính' href='/learning/truyen-thong-va-mang-may-tinh') Lập trình ASP.NET qua dự án thực tế
+              a.course-author(href='/profile/347285' title='ducnm46') ducnm46
+              p.course-description
+                | Kh&oacute;a h&#x1ECD;c cung c&#x1EA5;p cho l&#x1EAD;p tr&igrave;nh vi&ecirc;n nh&#x1EEF;ng ki&#x1EBF;n th&#x1EE9;c c&#x1A1; b&#x1EA3;n v&agrave; d&#x1EC5; hi&#x1EC3;u v&#x1EC1; m&#x1EA1;ng m&aacute;y t&iacute;nh v&agrave; truy&#x1EC1;n th&ocirc;ng d&#x1EEF; li&#x1EC7;u.
+              .view-content-footer
+                .course-footer-left
+                  .progress-circle.progress-0
+                    span 0
+                .course-footer-right
+                  a.btn-continue-study(href='/learning/truyen-thong-va-mang-may-tinh')
+                    | Học tiếp 
+                    i.fas.fa-arrow-right
+            .popover-course
+              a(href='/learning/truyen-thong-va-mang-may-tinh' title='Truyền thông và Mạng máy tính')
+                h3.popover-course__title Truy&#x1EC1;n th&ocirc;ng v&agrave; M&#x1EA1;ng m&aacute;y t&iacute;nh
+              .popover-course__sum
+                .author
+                  img(src='https://codelearn.io/CodeCamp/CodeCamp/Upload/Avatar/a76638850ecc4722b76d255e9cdd462f.jpg' alt='ducnm46')
+                  a.user-name(href='/profile/347285' title='ducnm46') ducnm46
+                span.rate-wrap
+                  span.star-rating
+                    span(style='width:90.0%')
+                  span.avg-rate 4.5
+                  span.total-rate (120)
+              .popover-course__info
+                span Cập nhât 
+                  span lúc 7/12/2021
+                ul.more-info
+                  li 
+                    span Total 4 hours 
+                  li 
+                    span Intermediate Leve
+                  li 
+                    span Subtitle
+                .description 
+                  p Khóa học cung cấp cho lập trình viên những kiến thức cơ bản và dễ hiểu, được ứng dụng nhiều nhất trong
+              ul.popover-course__detail-infor
+                li
+                  p
+                    i.fas.fa-globe-americas
+                    |  Online
+                li
+                  p
+                    i.fas.fa-users
+                    |  16840 học viên
+                li
+                  p
+                    i.fas.fa-star
+                    |  Đánh giá tuyệt vời từ học viên
+                li
+                  p
+                    i.fas.fa-clock
+                    |  Thời gian học
+                    strong 18 gi&#x1EDD;
+              .course__button 
+                button.btn.btn-buy-now Mua ngay
+                button.btn.btn-add-to-card 
+                  i.fas.fa-cart-plus
+        article.course-item.col-12.col-md-4.col-lg-3
+          .wrap-course-item
+            .course-thumb
+              a(href='/learning/truyen-thong-va-mang-may-tinh' title='Truyền thông và Mạng máy tính')
+                img(src='../build/images/c6b8d5cfe9ff4b56887e8751d37a1c61.png' alt='Truyền thông và Mạng máy tính')
+              .cl-badge.hot
+                span Nổi bật
+            .view-content.animate-box
+              .view-content-header
+                span.star-rating
+                  span(style='width:90.0%')                 
+                span.course-type.online
+                  | Online
+              h3.course-title
+                a(title='Truyền thông và Mạng máy tính' href='/learning/truyen-thong-va-mang-may-tinh') Lập trình ASP.NET qua dự án thực tế
+              a.course-author(href='/profile/347285' title='ducnm46') ducnm46
+              p.course-description
+                | Kh&oacute;a h&#x1ECD;c cung c&#x1EA5;p cho l&#x1EAD;p tr&igrave;nh vi&ecirc;n nh&#x1EEF;ng ki&#x1EBF;n th&#x1EE9;c c&#x1A1; b&#x1EA3;n v&agrave; d&#x1EC5; hi&#x1EC3;u v&#x1EC1; m&#x1EA1;ng m&aacute;y t&iacute;nh v&agrave; truy&#x1EC1;n th&ocirc;ng d&#x1EEF; li&#x1EC7;u.
+              .view-content-footer
+                .course-footer-left
+                  .progress-circle.progress-0
+                    span 0
+                .course-footer-right
+                  a.btn-continue-study(href='/learning/truyen-thong-va-mang-may-tinh')
+                    | Học tiếp 
+                    i.fas.fa-arrow-right
+            .popover-course
+              a(href='/learning/truyen-thong-va-mang-may-tinh' title='Truyền thông và Mạng máy tính')
+                h3.popover-course__title Truy&#x1EC1;n th&ocirc;ng v&agrave; M&#x1EA1;ng m&aacute;y t&iacute;nh
+              .popover-course__sum
+                .author
+                  img(src='https://codelearn.io/CodeCamp/CodeCamp/Upload/Avatar/a76638850ecc4722b76d255e9cdd462f.jpg' alt='ducnm46')
+                  a.user-name(href='/profile/347285' title='ducnm46') ducnm46
+                span.rate-wrap
+                  span.star-rating
+                    span(style='width:90.0%')
+                  span.avg-rate 4.5
+                  span.total-rate (120)
+              .popover-course__info
+                span Cập nhât 
+                  span lúc 7/12/2021
+                ul.more-info
+                  li 
+                    span Total 4 hours 
+                  li 
+                    span Intermediate Leve
+                  li 
+                    span Subtitle
+                .description 
+                  p Khóa học cung cấp cho lập trình viên những kiến thức cơ bản và dễ hiểu, được ứng dụng nhiều nhất trong
+              ul.popover-course__detail-infor
+                li
+                  p
+                    i.fas.fa-globe-americas
+                    |  Online
+                li
+                  p
+                    i.fas.fa-users
+                    |  16840 học viên
+                li
+                  p
+                    i.fas.fa-star
+                    |  Đánh giá tuyệt vời từ học viên
+                li
+                  p
+                    i.fas.fa-clock
+                    |  Thời gian học
+                    strong 18 gi&#x1EDD;
+              .course__button 
+                button.btn.btn-buy-now Mua ngay
+                button.btn.btn-add-to-card 
+                  i.fas.fa-cart-plus
+        article.course-item.col-12.col-md-4.col-lg-3
+          .wrap-course-item
+            .course-thumb
+              a(href='/learning/truyen-thong-va-mang-may-tinh' title='Truyền thông và Mạng máy tính')
+                img(src='../build/images/c6b8d5cfe9ff4b56887e8751d37a1c61.png' alt='Truyền thông và Mạng máy tính')
+              .cl-badge.hot
+                span Nổi bật
+            .view-content.animate-box
+              .view-content-header
+                span.star-rating
+                  span(style='width:90.0%')                 
+                span.course-type.online
+                  | Online
+              h3.course-title
+                a(title='Truyền thông và Mạng máy tính' href='/learning/truyen-thong-va-mang-may-tinh') Lập trình ASP.NET qua dự án thực tế
+              a.course-author(href='/profile/347285' title='ducnm46') ducnm46
+              p.course-description
+                | Kh&oacute;a h&#x1ECD;c cung c&#x1EA5;p cho l&#x1EAD;p tr&igrave;nh vi&ecirc;n nh&#x1EEF;ng ki&#x1EBF;n th&#x1EE9;c c&#x1A1; b&#x1EA3;n v&agrave; d&#x1EC5; hi&#x1EC3;u v&#x1EC1; m&#x1EA1;ng m&aacute;y t&iacute;nh v&agrave; truy&#x1EC1;n th&ocirc;ng d&#x1EEF; li&#x1EC7;u.
+              .view-content-footer
+                .course-footer-left
+                  .progress-circle.progress-0
+                    span 0
+                .course-footer-right
+                  a.btn-continue-study(href='/learning/truyen-thong-va-mang-may-tinh')
+                    | Học tiếp 
+                    i.fas.fa-arrow-right
+            .popover-course
+              a(href='/learning/truyen-thong-va-mang-may-tinh' title='Truyền thông và Mạng máy tính')
+                h3.popover-course__title Truy&#x1EC1;n th&ocirc;ng v&agrave; M&#x1EA1;ng m&aacute;y t&iacute;nh
+              .popover-course__sum
+                .author
+                  img(src='https://codelearn.io/CodeCamp/CodeCamp/Upload/Avatar/a76638850ecc4722b76d255e9cdd462f.jpg' alt='ducnm46')
+                  a.user-name(href='/profile/347285' title='ducnm46') ducnm46
+                span.rate-wrap
+                  span.star-rating
+                    span(style='width:90.0%')
+                  span.avg-rate 4.5
+                  span.total-rate (120)
+              .popover-course__info
+                span Cập nhât 
+                  span lúc 7/12/2021
+                ul.more-info
+                  li 
+                    span Total 4 hours 
+                  li 
+                    span Intermediate Leve
+                  li 
+                    span Subtitle
+                .description 
+                  p Khóa học cung cấp cho lập trình viên những kiến thức cơ bản và dễ hiểu, được ứng dụng nhiều nhất trong
+              ul.popover-course__detail-infor
+                li
+                  p
+                    i.fas.fa-globe-americas
+                    |  Online
+                li
+                  p
+                    i.fas.fa-users
+                    |  16840 học viên
+                li
+                  p
+                    i.fas.fa-star
+                    |  Đánh giá tuyệt vời từ học viên
+                li
+                  p
+                    i.fas.fa-clock
+                    |  Thời gian học
+                    strong 18 gi&#x1EDD;
+              .course__button 
+                button.btn.btn-buy-now Mua ngay
+                button.btn.btn-add-to-card 
+                  i.fas.fa-cart-plus
+  section.colorlib-event
+    .container
+      .row
+        .col-md-5.row-pb-md
+          .row
+            .col-md-12.colorlib-heading.animate-box
+              h1.heading-big Events
+              h2 Upcoming Events
+          .row
+            .col-md-12
+              .event-entry.animate-box
+                .desc
+                  p.meta
+                    span.day 01-02
+                    span.month Jun
+                  p.organizer
+                    span Organized by:
+                    span Noah Henderson
+                  h2
+                    a(href='event.html') We Held Free Training for Basic Programming
+                .location
+                  span.icon
+                    i.icon-map
+                  p 291 South 21th Street, Suite 721 New York NY 10016             
+        .col-md-7.row-pb-md
+          .row
+            .col-md-12.colorlib-heading.animate-box
+              h1.heading-big Recent Blog
+              h2 Recent Blog
+          .row
+            .col-md-12
+              .block-21.d-flex.animate-box
+                a.blog-img(href='#' style='background-image: url(../build/images/blog-1.jpg);')
+                .text
+                  h3.heading
+                    a(href='#') Even the all-powerful Pointing has no control about the blind texts
+                  p
+                    | ven the all-powerful Pointing has no control about the blind texts it is an almost
+                  .meta
+                    div
+                      a(href='#')
+                        span.icon-calendar
+                        |  May 29, 2018
+                    div
+                      a(href='#')
+                        span.icon-user2
+                        |  Admin
+                    div
+                      a(href='#')
+                        span.icon-chat
+                        |  19
+              .block-21.d-flex.animate-box
+                a.blog-img(href='#' style='background-image: url(../build/images/blog-2.jpg);')
+                .text
+                  h3.heading
+                    a(href='#') Even the all-powerful Pointing has no control about the blind texts
+                  p
+                    | ven the all-powerful Pointing has no control about the blind texts it is an almost
+                  .meta
+                    div
+                      a(href='#')
+                        span.icon-calendar
+                        |  May 29, 2018
+                    div
+                      a(href='#')
+                        span.icon-user2
+                        |  Admin
+                    div
+                      a(href='#')
+                        span.icon-chat
+                        |  19
+  footer
+    #footer.animate-box
+      .footer-top.animate-box
+        .container
+          .row
+            .col-sm-12
+              ul.list-inline.footer-menu1.list_non_style
+                li
+                  a(href="#") Giới thiệu
+                li
+                  a(href="#") Hợp tác và đầu tư
+                li
+                  a(href="#") Ý kiến khách hàng
+                li
+                  a(href="#") Cộng tác kiếm tiền
+                li
+                  a(href="#") Liên hệ
+            .col-sm-7
+              .footer-title
+                h3 Về Website500k
+                p.footer-intro Thành lập từ năm 2010, Website500K tiên phong trong lĩnh vực
+                a(href="") Thiết kế website theo mẫu có sẵn
+                | (Web Template) với kho ứng dụng phong phú từ cộng đồng mã nguồn mở (Open-Source) giúp đem lại chất lượng dịch vụ thiết kế web tốt, giá thành giảm. Khởi điểm chỉ từ 500K đến 5 triệu đồng, bạn sẽ sở hữu ngay 1 trang
+            .col-sm-5.hidden-xs.hidden-md
+              .footer-title
+                h3.cskh Hotline :&nbsp;&nbsp;&nbsp;
+                  a(href="#") 0986 899 199
+                h3.cskh Kỹ thuật :&nbsp;
+                  a(href="#") 0986 899 199
+                h3.cskh Khiếu nại :&nbsp;
+                  a(href="#") 0986 899 199
+                .row.row_footer_title_tablet
+                  .col-sm-6.col-xs-12
+                    ul.footer-menu2.list_non_style
+                      li
+                        a(href="#") Hướng dẫn sử dụng
+                      li
+                        a(href="#") Hỏi & đáp thường gặp
+                      li
+                        a(href="#") Hướng dẫn đặt hàng
+                      li
+                        a(href="#") Quy định điều khoản
+                  .col-sm-6.col-xs-12
+                    ul.footer-menu2.list_non_style
+                      li
+                        a(href="#") Thông tin thanh toán
+                      li
+                        a(href="#") Thiết kế website miễn phí
+                      li
+                        a(href="#") Chính sách hoàn tiền
+                      li
+                        a(href="#") Bảo mật thông tin
+      .footer-bottom.animate-box
+        .container
+          .row
+            .col-sm-5.company-name
+              .footer-title
+                h3 Liên hệ
+                p Công ty Thương Mại Điện Tử Be-Group
+            .col-sm-7
+              ul.list-inline.footer-menu3.hidden-xs
+                li
+                  a(href="#") Thiết kế website
+                li
+                  a(href="#") Làm web
+                li
+                  a(href="#") Quảng cáo website
+                li
+                  a(href="#") Hosting - Domain
+                li
+                  a(href="#") Web miễn phí
+          .row.group-menu
+            .col-sm-8.col-xs-12
+              .row
+                .col-sm-6
+                  h4 TP.HN: &nbsp;
+                  p Địa Chỉ: &nbsp;
+                    a(href="#" target="_blank") 88 Thái Hà, Q.Đống Đa, Tp Hà Nội
+                  p Điện thoại hỗ trợ: &nbsp;
+                    a(href="#") (028) 629.113.27
+                  p Email: &nbsp;
+                    a(href="#") info@website500k.com
+            .col-sm-4.hidden-xs
+              img.image-bct(src="build/img/bct.png" alt="Đã đăng ký bộ công thương")
+    #powered
+      .container
+        .row
+          .col-sm-12
+            .text-center
+              p Copyright © 2018 - 2019 web888k.com
+  .gototop.js-top
+    a.js-gotop(href='#')
+      i.icon-arrow-up2
+
+  script( src='../plugins/js/jquery.min.js')
+  script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js' integrity='sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM' crossorigin='anonymous')
+  script(defer src='../node_modules/@fortawesome/fontawesome-free/js/all.min.js')
+  script(defer src='../plugins/js/jquery.waypoints.min.js')
+  script(defer src='../plugins/js/jquery.stellar.min.js')
+  script(defer src='../plugins/js/owl.carousel.min.js')
+  script(defer src='../plugins/js/jquery.flexslider-min.js')
+  script(defer src='../plugins/js/jquery.countTo.js')
+  script(defer src='../plugins/js/jquery.magnific-popup.min.js')
+  script(defer src='../plugins/js/magnific-popup-options.js')
+  script(defer src='../plugins/js/main.js')

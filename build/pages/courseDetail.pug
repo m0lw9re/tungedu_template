@@ -1,0 +1,223 @@
+doctype html
+head
+    meta(charset='utf-8')
+    title Knowledge Template
+    meta(name="viewport" content="initial-scale=1.0, width=device-width")
+    meta(name='description' content='')
+    meta(name='keywords' content='')
+    meta(name='author' content='')
+    // Facebook and Twitter integration
+    meta(property='og:title' content='')
+    meta(property='og:image' content='')
+    meta(property='og:url' content='')
+    meta(property='og:site_name' content='')
+    meta(property='og:description' content='')
+    meta(name='twitter:title' content='')
+    meta(name='twitter:image' content='')
+    meta(name='twitter:url' content='')
+    meta(name='twitter:card' content='')
+    link(rel='preconnect' href='https://fonts.googleapis.com')
+    link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,300&display=swap' rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900' rel='stylesheet')
+    link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous")
+    link(rel="stylesheet" href="../../node_modules/@fortawesome/fontawesome-free/css/all.min.css")
+    link(rel="stylesheet" href="../../plugins/css/flexslider.css")
+    link(rel="stylesheet" href="../../plugins/css/magnific-popup.css")
+    link(rel="stylesheet" href="../../plugins/fonts/flaticon/font/flaticon.css")
+    link(rel="stylesheet" href="../../plugins/css/icomoon.css")
+    link(rel="stylesheet" href="../../plugins/css/animate.css")
+    link(rel='stylesheet' href='../../plugins/css/owl.carousel.min.css')
+    link(rel='stylesheet' href='../../plugins/css/owl.theme.default.min.css')
+
+    link(rel='stylesheet' href='../css/style.css')  
+    link(rel='stylesheet' href='../css/courseDetail.css')  
+    link(rel='stylesheet' href='../css/responsive.css')  
+    script(src='../../plugins/js/modernizr-2.6.2.min.js')
+body 
+    header.header_area
+        .top-menu
+            .container
+                .float-start 
+                    ul.list.header_social
+                        li
+                            a(href='#')
+                                i.fab.fa-facebook-f
+                        li
+                            a(href='#')
+                                i.fab.fa-twitter
+                        li
+                            a(href='#')
+                                i.fab.fa-google
+                        li
+                            a(href='#')
+                                i.fab.fa-telegram-plane
+                .float-end 
+                    a.dn_btn(href='tel:+4400123654896') +440 012 3654 896
+                    a.dn_btn(href='mailto:support@colorlib.com') support@colorlib.com
+        .main_menu
+            nav.navbar.navbar-expand-lg.navbar-light
+                .container
+                    a.navbar-brand.logo_h(href='index.html')
+                        img(src='../../build/images/logo.png' alt='')
+                    button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+                    #navbarSupportedContent.collapse.navbar-collapse.offset
+                        ul.nav.navbar-nav.menu_nav.ml-auto
+                            li.nav-item.active
+                                a.nav-link(href='index.html') Học theo lộ trình
+                            li.nav-item
+                                a.nav-link(href='about-us.html') Thư viện
+                            li.nav-item.submenu.dropdown
+                                a.nav-link.dropdown-toggle(href='#' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false') Diễn đàn
+                                ul.dropdown-menu
+                                    li.nav-item
+                                        a.nav-link(href='courses.html')
+                                    li.nav-item
+                                        a.nav-link(href='course-details.html')  Diễn đàn
+                            li.nav-item.submenu.dropdown
+                                a.nav-link.dropdown-toggle(href='#' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false') Việc làm
+                                ul.dropdown-menu
+                                    li.nav-item
+                                        a.nav-link(href='elements.html') Elements
+                            li.nav-item.submenu.dropdown
+                                a.nav-link.dropdown-toggle(href='#' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false') Hỏi đáp
+                                ul.dropdown-menu
+                                    li.nav-item
+                                        a.nav-link(href='blog.html') Việc làm
+                                    li.nav-item
+                                        a.nav-link(href='single-blog.html') Blog Detailsa
+                            li.nav-item
+                                a.nav-link(href='contact.html') Liên hệ
+        section.course-detail
+            .container-fluid
+                .row 
+                    .col-md-12.course-detail-section-0.course-detail-had-animation
+                        .cd-row
+                            .cd-column.cd-column-1
+                                .cd-module.cd-text-0
+                                    .cd-text-inner 
+                                        h1 Khoa hoc 
+                                            span(style="color: #00ffff") Tester
+                                .cd-module.cd-text-1
+                                    .cd-text-inner 
+                                        p Danh cho nguoi moi bat dau
+                                .cd-module.cd-button 
+                                    .cd-module-inner 
+                                        .cd-button-wrapper
+                                            a.cd-button-one
+                                                span TAI CHUONG TRINH 
+                                            a.cd-button-two(href="") 
+                                                span DANG KY
+                            .cd-column
+                                .cd-module
+                                    span.cd-image 
+                                        img.wp-image-69429(fetchpriority='high' decoding='async' width='600' height='400' src='https://cdn.codegym.vn/wp-content/uploads/2023/06/Tester-img-1.png' alt='Đánh gia công việc' title='Tester img (1)' srcset='https://cdn.codegym.vn/wp-content/uploads/2023/06/Tester-img-1.png 600w, https://cdn.codegym.vn/wp-content/uploads/2023/06/Tester-img-1-480x320.png 480w' sizes='(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 600px, 100vw')
+
+        footer
+            #footer.animate-box
+                .footer-top.animate-box
+                    .container
+                        .row
+                            .col-sm-12
+                                ul.list-inline.footer-menu1.list_non_style
+                                    li
+                                        a(href="#") Giới thiệu
+                                    li
+                                        a(href="#") Hợp tác và đầu tư
+                                    li
+                                        a(href="#") Ý kiến khách hàng
+                                    li
+                                        a(href="#") Cộng tác kiếm tiền
+                                    li
+                                        a(href="#") Liên hệ
+                            .col-sm-7
+                                .footer-title
+                                    h3 Về Website500k
+                                    p.footer-intro Thành lập từ năm 2010, Website500K tiên phong trong lĩnh vực
+                                    a(href="") Thiết kế website theo mẫu có sẵn
+                                    | (Web Template) với kho ứng dụng phong phú từ cộng đồng mã nguồn mở (Open-Source) giúp đem lại chất lượng dịch vụ thiết kế web tốt, giá thành giảm. Khởi điểm chỉ từ 500K đến 5 triệu đồng, bạn sẽ sở hữu ngay 1 trang
+                            .col-sm-5.hidden-xs.hidden-md
+                                .footer-title
+                                    h3.cskh Hotline :&nbsp;&nbsp;&nbsp;
+                                        a(href="#") 0986 899 199
+                                    h3.cskh Kỹ thuật :&nbsp;
+                                        a(href="#") 0986 899 199
+                                    h3.cskh Khiếu nại :&nbsp;
+                                        a(href="#") 0986 899 199
+                                .row.row_footer_title_tablet
+                                    .col-sm-6.col-xs-12
+                                        ul.footer-menu2.list_non_style
+                                            li
+                                                a(href="#") Hướng dẫn sử dụng
+                                            li
+                                                a(href="#") Hỏi & đáp thường gặp
+                                            li
+                                                a(href="#") Hướng dẫn đặt hàng
+                                            li
+                                                a(href="#") Quy định điều khoản
+                                    .col-sm-6.col-xs-12
+                                        ul.footer-menu2.list_non_style
+                                            li
+                                                a(href="#") Thông tin thanh toán
+                                            li
+                                                a(href="#") Thiết kế website miễn phí
+                                            li
+                                                a(href="#") Chính sách hoàn tiền
+                                            li
+                                                a(href="#") Bảo mật thông tin
+                .footer-bottom.animate-box
+                    .container
+                        .row
+                            .col-sm-5.company-name
+                                .footer-title
+                                    h3 Liên hệ
+                                    p Công ty Thương Mại Điện Tử Be-Group
+                            .col-sm-7
+                                ul.list-inline.footer-menu3.hidden-xs
+                                    li
+                                    a(href="#") Thiết kế website
+                                    li
+                                    a(href="#") Làm web
+                                    li
+                                    a(href="#") Quảng cáo website
+                                    li
+                                    a(href="#") Hosting - Domain
+                                    li
+                                    a(href="#") Web miễn phí
+                        .row.group-menu
+                            .col-sm-8.col-xs-12
+                                .row
+                                    .col-sm-6
+                                        h4 TP.HN: &nbsp;
+                                        p Địa Chỉ: &nbsp;
+                                            a(href="#" target="_blank") 88 Thái Hà, Q.Đống Đa, Tp Hà Nội
+                                        p Điện thoại hỗ trợ: &nbsp;
+                                            a(href="#") (028) 629.113.27
+                                        p Email: &nbsp;
+                                            a(href="#") info@website500k.com
+                            .col-sm-4.hidden-xs
+                                img.image-bct(src="build/img/bct.png" alt="Đã đăng ký bộ công thương")
+        #powered
+            .container
+                .row
+                .col-sm-12
+                    .text-center
+                    p Copyright © 2018 - 2019 web888k.com
+    .gototop.js-top
+        a.js-gotop(href='#')
+        i.icon-arrow-up2
+
+    script( src='../../plugins/js/jquery.min.js')
+    script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js' integrity='sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM' crossorigin='anonymous')
+    script(defer src='../../node_modules/@fortawesome/fontawesome-free/js/all.min.js')
+    script(defer src='../../plugins/js/jquery.waypoints.min.js')
+    script(defer src='../../plugins/js/jquery.stellar.min.js')
+    script(defer src='../../plugins/js/owl.carousel.min.js')
+    script(defer src='../../plugins/js/jquery.flexslider-min.js')
+    script(defer src='../../plugins/js/jquery.countTo.js')
+    script(defer src='../../plugins/js/jquery.magnific-popup.min.js')
+    script(defer src='../../plugins/js/magnific-popup-options.js')
+    script(defer src='../../plugins/js/main.js')
