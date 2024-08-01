@@ -26,12 +26,11 @@ module.exports = function (grunt) {
         files: ["build/pages/*.pug", "build/index.pug"],
         tasks: ["pug:debug", "pug:release", "notify:pug"],
       },
-      html: {
-        files: ["build/pages/*.html", "build/index.html"],
-      },
-      options: {
-        // reload page
-        livereload: true,
+      livereload: {
+        // Here we watch the files the sass task will compile to
+        // These files are sent to the live reload server after sass compiles to them
+        options: { livereload: true },
+        files: ['dist/**/*'],
       },
     },
     // Notify end of tasks

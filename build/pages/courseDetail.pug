@@ -93,29 +93,89 @@ body
                                 a.nav-link(href='contact.html') Liên hệ
         section.course-detail
             .container-fluid
-                .row 
-                    .col-md-12.course-detail-section-0.course-detail-had-animation
-                        .cd-row
-                            .cd-column.cd-column-1
-                                .cd-module.cd-text-0
-                                    .cd-text-inner 
-                                        h1 Khoa hoc 
-                                            span(style="color: #00ffff") Tester
-                                .cd-module.cd-text-1
-                                    .cd-text-inner 
-                                        p Danh cho nguoi moi bat dau
-                                .cd-module.cd-button 
-                                    .cd-module-inner 
-                                        .cd-button-wrapper
-                                            a.cd-button-one
-                                                span TAI CHUONG TRINH 
-                                            a.cd-button-two(href="") 
-                                                span DANG KY
-                            .cd-column
-                                .cd-module
-                                    span.cd-image 
-                                        img.wp-image-69429(fetchpriority='high' decoding='async' width='600' height='400' src='https://cdn.codegym.vn/wp-content/uploads/2023/06/Tester-img-1.png' alt='Đánh gia công việc' title='Tester img (1)' srcset='https://cdn.codegym.vn/wp-content/uploads/2023/06/Tester-img-1.png 600w, https://cdn.codegym.vn/wp-content/uploads/2023/06/Tester-img-1-480x320.png 480w' sizes='(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 600px, 100vw')
-
+                .row.course-detail-section-0
+                    .col-md-2
+                    .col-md-4.cd-column.cd-column-1
+                        .cd-module.cd-text-0
+                            .cd-text-inner 
+                                h1 Khóa học 
+                                    span(style="color: lawngreen;text-wrap: nowrap;") Lập trình C
+                        .cd-module.cd-text-1
+                            .cd-text-inner 
+                                p Dành cho người mới bắt đầu
+                        .cd-module.cd-button 
+                            .cd-module-inner 
+                                .cd-button-wrapper
+                                    a.hover-button.cd-button-one(href="") 
+                                        span TẢI CHƯƠNG TRÌNH
+                                    a.hover-button.cd-button-two(href="") 
+                                        span ĐĂNG KÝ HỌC
+                    .col-md-6.cd-column.cd-column-2
+                        .cd-module
+                            span.cd-image 
+                                img.wp-image-69429(fetchpriority='high' decoding='async' width='600' height='400' src='https://cdn.codegym.vn/wp-content/uploads/2023/06/Tester-img-1.png' alt='Đánh gia công việc' title='Tester img (1)' srcset='https://cdn.codegym.vn/wp-content/uploads/2023/06/Tester-img-1.png 600w, https://cdn.codegym.vn/wp-content/uploads/2023/06/Tester-img-1-480x320.png 480w' sizes='(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 600px, 100vw')
+                    .course-detail-section-0-bottom
+                .row.course-detail-section-1
+                    .col-md-12
+                        .cd-text 
+                            h1 TỔNG QUAN KHÓA HỌC
+                .row.course-detail-section-2 
+                    .col-md-2 
+                    .col-md-4
+                        .cd-content.cd-content-toggle.cd-content-toggle-close
+                            h3.cd-content-toggel-title(data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample") Module 1 | 3 tuần: Kiểm thử cơ bản
+                            .cd-content-toggle-content.collapse#collapseExample
+                                ul
+                                    li
+                                        span Tổng quan về kiểm thử phần mềm
+                                    li
+                                        span Tổng quan về kiểm thử phần mềm 2
+                                    li
+                                        span Tổng quan về kiểm thử phần mềm 3
+                        .cd-content.cd-content-toggle.cd-content-toggle-close
+                            h3.cd-content-toggel-title(data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="true" aria-controls="collapseExample1") Module 2 | 3 tuần: Kiểm thử cơ bản
+                            .cd-content-toggle-content.collapse#collapseExample1
+                                ul
+                                    li
+                                        span Tổng quan về kiểm thử phần mềm
+                                    li
+                                        span Tổng quan về kiểm thử phần mềm 2
+                                    li
+                                        span Tổng quan về kiểm thử phần mềm 3
+                    .col-md-4
+                        .cd-content.cd-content-text 
+                            .cd-text-inner 
+                                h3 Học liệu
+                                ul 
+                                    li 
+                                        span Java
+                                    li 
+                                        span #
+                            .cd-text-inner 
+                                h3 Bài tập
+                                ul 
+                                    li 
+                                        span VMware
+                                    li 
+                                        span Virtual Box
+                .row.course-detail-section-1
+                    .col-md-12
+                        .cd-text 
+                            h1 NỘI DUNG KHÓA HỌC
+                .row.course-detail-section-3
+                    .col-md-2
+                    .col-md-6.flex-parent
+                        .flex.cd-content-title
+                            .flex.items-center.gap-1 33 Chương
+                                svg(viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' width='24' height='16')
+                                    circle(cx='12' cy='12' r='3' fill='currentColor')
+                            .flex.items-center.gap-1 131 bài giảng
+                                svg(viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' width='24' height='16')
+                                    circle(cx='12' cy='12' r='3' fill='currentColor')
+                            .flex.items-center.gap-1 30 giờ 59 phút tổng thời lượng
+                                svg(viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' width='24' height='16')
+                                    circle(cx='12' cy='12' r='3' fill='currentColor')
+                        .text-navy-primary Mở rộng tất cả các phần
         footer
             #footer.animate-box
                 .footer-top.animate-box
