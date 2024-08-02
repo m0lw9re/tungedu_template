@@ -120,8 +120,8 @@ body
                         .cd-text 
                             h1 TỔNG QUAN KHÓA HỌC
                 .row.course-detail-section-2 
-                    .col-md-2 
-                    .col-md-4
+                    .col-lg-2.col-md-0.col-sm-0
+                    .col-lg-4.col-md-6.col-sm-6
                         .cd-content.cd-content-toggle.cd-content-toggle-close
                             h3.cd-content-toggel-title(data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample") Module 1 | 3 tuần: Kiểm thử cơ bản
                             .cd-content-toggle-content.collapse#collapseExample
@@ -142,7 +142,7 @@ body
                                         span Tổng quan về kiểm thử phần mềm 2
                                     li
                                         span Tổng quan về kiểm thử phần mềm 3
-                    .col-md-4
+                    .col-lg-4.col-md-6.col-sm-6
                         .cd-content.cd-content-text 
                             .cd-text-inner 
                                 h3 Học liệu
@@ -163,19 +163,34 @@ body
                         .cd-text 
                             h1 NỘI DUNG KHÓA HỌC
                 .row.course-detail-section-3
-                    .col-md-2
-                    .col-md-6.flex-parent
-                        .flex.cd-content-title
-                            .flex.items-center.gap-1 33 Chương
-                                svg(viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' width='24' height='16')
-                                    circle(cx='12' cy='12' r='3' fill='currentColor')
-                            .flex.items-center.gap-1 131 bài giảng
-                                svg(viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' width='24' height='16')
-                                    circle(cx='12' cy='12' r='3' fill='currentColor')
-                            .flex.items-center.gap-1 30 giờ 59 phút tổng thời lượng
-                                svg(viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' width='24' height='16')
-                                    circle(cx='12' cy='12' r='3' fill='currentColor')
-                        .text-navy-primary Mở rộng tất cả các phần
+                    .col-lg-2.col-md-0.col-sm-0
+                    .col-lg-8.col-md-12.col-sm-12
+                        .flex-parent
+                            .flex-parent-title
+                                .flex.cd-content-title
+                                    .flex.items-center.gap-1 33 Chương
+                                        svg(viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' width='24' height='16')
+                                            circle(cx='12' cy='12' r='3' fill='currentColor')
+                                    .flex.items-center.gap-1 131 bài giảng
+                                        svg(viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' width='24' height='16')
+                                            circle(cx='12' cy='12' r='3' fill='currentColor')
+                                    .flex.items-center.gap-1 30 giờ 59 phút tổng thời lượng
+                                        svg(viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' width='24' height='16')
+                                            circle(cx='12' cy='12' r='3' fill='currentColor')
+                                .text-navy-primary Mở rộng tất cả các phần
+                            .flex-content
+                                .content-detail.d-flex.align-items-start                               
+                                    #v-pills-tab.h-full.nav.flex-column.nav-pills.me-3(role='tablist' aria-orientation='vertical')
+                                        button#v-pills-home-tab.h-item.nav-link.active(data-bs-toggle='pill' data-bs-target='#v-pills-home' type='button' role='tab' aria-controls='v-pills-home' aria-selected='true') Home
+                                        button#v-pills-profile-tab.h-item.nav-link(data-bs-toggle='pill' data-bs-target='#v-pills-profile' type='button' role='tab' aria-controls='v-pills-profile' aria-selected='false') Profile
+                                        button#v-pills-messages-tab.h-item.nav-link(data-bs-toggle='pill' data-bs-target='#v-pills-messages' type='button' role='tab' aria-controls='v-pills-messages' aria-selected='false') Messages
+                                        button#v-pills-settings-tab.h-item.nav-link(data-bs-toggle='pill' data-bs-target='#v-pills-settings' type='button' role='tab' aria-controls='v-pills-settings' aria-selected='false') Settings
+                                    #v-pills-tabContent.tab-content
+                                        #v-pills-home.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='v-pills-home-tab') 123
+                                        #v-pills-profile.tab-pane.fade(role='tabpanel' aria-labelledby='v-pills-profile-tab') 456
+                                        #v-pills-messages.tab-pane.fade(role='tabpanel' aria-labelledby='v-pills-messages-tab') .789
+                                        #v-pills-settings.tab-pane.fade(role='tabpanel' aria-labelledby='v-pills-settings-tab') ...
+
         footer
             #footer.animate-box
                 .footer-top.animate-box
