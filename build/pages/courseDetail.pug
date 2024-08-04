@@ -117,8 +117,9 @@ body
                     .course-detail-section-0-bottom
                 .row.course-detail-section-1
                     .col-md-12
-                        .cd-text 
-                            h1 TỔNG QUAN KHÓA HỌC
+                        .cd-text.colorlib-heading
+                            h1.heading-big TỔNG QUAN KHÓA HỌC 
+                            h2 TỔNG QUAN KHÓA HỌC
                 .row.course-detail-section-2 
                     .col-lg-2.col-md-0.col-sm-0
                     .col-lg-4.col-md-6.col-sm-6
@@ -160,8 +161,9 @@ body
                                         span Virtual Box
                 .row.course-detail-section-1
                     .col-md-12
-                        .cd-text 
-                            h1 NỘI DUNG KHÓA HỌC
+                        .cd-text.colorlib-heading
+                            h1.heading-big NỘI DUNG KHÓA HỌC
+                            h2 NỘI DUNG KHÓA HỌC
                 .row.course-detail-section-3
                     .col-lg-2.col-md-0.col-sm-0
                     .col-lg-8.col-md-12.col-sm-12
@@ -186,7 +188,50 @@ body
                                         button#v-pills-messages-tab.h-item.nav-link(data-bs-toggle='pill' data-bs-target='#v-pills-messages' type='button' role='tab' aria-controls='v-pills-messages' aria-selected='false') Messages
                                         button#v-pills-settings-tab.h-item.nav-link(data-bs-toggle='pill' data-bs-target='#v-pills-settings' type='button' role='tab' aria-controls='v-pills-settings' aria-selected='false') Settings
                                     #v-pills-tabContent.tab-content
-                                        #v-pills-home.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='v-pills-home-tab') 123
+                                        #v-pills-home.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='v-pills-home-tab')
+                                            .tab-content-header
+                                                span.header-tooltip Giới thiệu chung về Python
+                                                .header-detail 
+                                                    .header-item
+                                                        svg(viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg' width='16' height='16' name='reading-book')
+                                                            g(clip-path='url(#book-reading_svg__clip0_2002_1800)' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round')
+                                                                path(d='M7 13.5V8.25a1.25 1.25 0 0 1 2.5 0V11h2a2 2 0 0 1 2 2v.5M6.257 3.095A8.237 8.237 0 0 0 1.51.51a.886.886 0 0 0-1.01.877v7.13a.886.886 0 0 0 .788.886 8.202 8.202 0 0 1 3.9 1.627M6.258 5.858V3.095M11.226 9.402a.886.886 0 0 0 .789-.886v-7.13a.886.886 0 0 0-1.01-.877 8.238 8.238 0 0 0-4.748 2.586')
+                                                        |  5 b&agrave;i &dstrok;&#x1ECD;c
+                                                    .header-item
+                                                        svg(viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg' width='16' height='16' name='play-video')
+                                                            path(d='M5.014 8.764V5.236c0-.408.474-.666.86-.468l3.441 1.765a.515.515 0 0 1 0 .934l-3.44 1.765c-.387.198-.861-.06-.861-.468ZM.61 6.139a6.506 6.506 0 0 0 0 1.593M3.116 1.799a6.506 6.506 0 0 1 1.38-.797M1.068 4.43a6.503 6.503 0 0 1 .796-1.38' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round')
+                                                            path(d='M7.012.5c3.55 0 6.427 2.91 6.427 6.5s-2.877 6.5-6.427 6.5c-2.446 0-4.572-1.382-5.658-3.416' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round')
+                                                        |  6 video
+                                                    .header-item
+                                                        svg(viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg' width='16' height='16' name='sticky-note')
+                                                            path(d='M16.072 16.072a1.286 1.286 0 0 1-1.286 1.285H3.214a1.286 1.286 0 0 1-1.285-1.285V1.928A1.286 1.286 0 0 1 3.214.643h8.358l4.5 4.5V16.07Z' stroke='currentColor' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round')
+                                                            path(d='M10.929.643v5.143h5.143' stroke='currentColor' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round')
+                                                        |  1 b&agrave;i t&#x1EAD;p
+                                                    .header-item
+                                                        svg(viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg' width='16' height='16' size='20' name='fact-check')
+                                                            path(d='M15.067 16.072a1.286 1.286 0 0 1-1.286 1.285H2.21a1.286 1.286 0 0 1-1.286-1.285V1.928A1.286 1.286 0 0 1 2.21.643H9.39c.341 0 .668.135.91.376l4.39 4.39c.24.241.376.568.376.91v9.752ZM8.714 8.196h3.214M8.714 12.656h3.214' stroke='currentColor' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round')
+                                                            path(d='M3.741 12.584 4.82 13.66l1.795-2.514M3.741 8.043 4.82 9.121l1.795-2.514' stroke='currentColor' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round')
+                                                        |  1 b&agrave;i ki&#x1EC3;m tra
+                                                    .header-item
+                                                        svg(viewBox='0 0 12 14' fill='none' xmlns='http://www.w3.org/2000/svg' width='16' height='16' name='code-tag')
+                                                            path(d='M11.5 12.5a1 1 0 0 1-1 1h-9a1 1 0 0 1-1-1v-11a1 1 0 0 1 1-1H8L11.5 4v8.5Z' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round')
+                                                            path(d='m4.5 10.5-2-2 2-2M7.5 10.5l2-2-2-2' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round')
+                                                        |  3 b&agrave;i l&#x1EAD;p tr&igrave;nh
+                                            .tab-content-detail 
+                                                .item
+                                                    .item-header.cd-content-toggel-title(data-bs-toggle="collapse" data-bs-target="#collapse-content-1" aria-expanded="true" aria-controls="collapse-content-1")
+                                                        .image-icon
+                                                        .description
+                                                            span 1.1 Giới thiệu chung
+                                                            .text-primary
+                                                                | 1 b&agrave;i &dstrok;&#x1ECD;c, 1 video
+                                                                .text-primary-child
+                                                                    svg(viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' width='24' height='16')
+                                                                        circle(cx='12' cy='12' r='3' fill='currentColor')
+                                                                    |  24 ph&uacute;t
+
+                                                    .item-detail.cd-content-toggle-content.collapse#collapse-content-1
+                                                        h1 aaaa
                                         #v-pills-profile.tab-pane.fade(role='tabpanel' aria-labelledby='v-pills-profile-tab') 456
                                         #v-pills-messages.tab-pane.fade(role='tabpanel' aria-labelledby='v-pills-messages-tab') .789
                                         #v-pills-settings.tab-pane.fade(role='tabpanel' aria-labelledby='v-pills-settings-tab') ...

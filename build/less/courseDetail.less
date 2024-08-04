@@ -140,7 +140,7 @@
             padding: 2% 0;
 
             h1 {
-                color: black;
+                // color: black;
             }
         }
     }
@@ -217,6 +217,8 @@
     }
 
     .course-detail-section-3 {
+        color: black;
+
         .flex-parent {
             display: flex;
             flex-direction: column;
@@ -269,7 +271,6 @@
                         align-items: center;
                         display: flex;
                         min-height: 80px;
-                        color: black;
                     }
 
                     .h-item.active {
@@ -278,6 +279,103 @@
                     }
                 }
 
+                .tab-content {
+
+                    *,
+                    :after,
+                    :before {
+                        border: 0 solid #e5e7eb;
+                    }
+
+                    .tab-pane {
+                        .tab-content-header {
+                            padding-top: .75rem;
+                            padding-bottom: .75rem;
+                            padding-left: 1rem;
+                            padding-right: 1rem;
+                            border-bottom: solid 1px rgb(209, 213, 219);
+                            row-gap: .5rem;
+                            display: flex;
+                            flex-direction: column;
+                            min-height: 80px;
+
+                            .header-tooltip {
+                                overflow: hidden;
+                                word-break: break-word;
+                                line-height: 24px;
+                                font-weight: 600;
+                            }
+
+                            .header-detail {
+                                font-size: .875rem;
+                                line-height: 20px;
+                                row-gap: .75rem;
+                                column-gap: 1.5rem;
+                                flex-wrap: wrap;
+                                display: flex;
+                                color: rgb(99, 115, 129);
+
+                                .header-item {
+                                    font-weight: 300;
+                                }
+                            }
+                        }
+
+                        .tab-content-detail {
+                            display: flex;
+                            flex-direction: column;
+                            padding-left: 2rem;
+
+                            .item-header {
+                                padding-top: .75rem;
+                                padding-bottom: .75rem;
+                                border-color: rgb(209, 213, 219);
+                                border-style: dashed;
+                                border-bottom-width: 1px;
+                                gap: .75rem;
+                                align-items: center;
+                                display: grid;
+                                grid-template-columns: 14px 1fr;
+                                cursor: pointer;
+
+                                .image-icon {
+                                    width: 0.875rem;
+                                }
+
+                                .description {
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: .25rem;
+
+                                    span {
+                                        overflow: hidden;
+                                        word-break: break-word;
+                                        font-weight: 400;
+                                        margin-top: 0;
+                                        margin-bottom: 0;
+                                    }
+
+                                    .text-primary {
+                                        font-size: .75rem;
+                                        line-height: 16px;
+                                        gap: .25rem;
+                                        color: rgb(99, 115, 129);
+                                        display: flex;
+                                        align-items: center;
+
+                                        .text-primary-child {
+                                            padding-right: .5rem;
+                                            gap: .25rem;
+                                            align-items: center;
+                                            flex: none;
+                                            display: flex;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
