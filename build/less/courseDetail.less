@@ -134,18 +134,22 @@
 
     }
 
-    .course-detail-section-1 {
+    .course-detail-section-1,
+    .course-detail-section-4,
+    .course-detail-section-5 {
+
         .cd-text {
             text-align: center;
             padding: 2% 0;
-
-            h1 {
-                // color: black;
-            }
         }
     }
 
+    .course-detail-section-5 {
+        background-color: #eaeaea !important;
+    }
+
     .course-detail-section-2 {
+
         .cd-content {
             margin-bottom: 5.82%;
 
@@ -172,15 +176,15 @@
             .cd-text-inner {
                 ul {
                     list-style-type: disc;
-                    padding: 0 0 23px 1em;
+                    padding: 0 0 13px 1em;
                     line-height: 26px;
 
                     li {
-                        margin-bottom: 10px;
+                        margin-bottom: 5px;
                     }
 
                     span {
-                        font-size: 1.3em;
+                        font-size: 1.1em;
                         font-weight: 300;
                         color: black;
                     }
@@ -209,6 +213,7 @@
         .cd-content-toggle-close,
         .cd-text-inner {
             padding: 20px;
+            padding-bottom: 0;
         }
 
         .cd-text-inner ul {
@@ -218,6 +223,9 @@
 
     .course-detail-section-3 {
         color: black;
+        font-weight: 300;
+        padding-bottom: 20px;
+        background-color: #eaeaea !important;
 
         .flex-parent {
             display: flex;
@@ -227,6 +235,14 @@
 
         .flex {
             display: flex;
+        }
+
+        .flex-col {
+            flex-direction: column;
+        }
+
+        .gap-1 {
+            gap: .25rem;
         }
 
         .flex-parent-title {
@@ -251,6 +267,7 @@
             border-radius: 12px;
             border-color: rgb(237, 240, 253);
             overflow: hidden;
+            background-color: white;
 
             .content-detail {
                 display: grid;
@@ -260,6 +277,7 @@
 
                 .h-full {
                     background-color: rgb(221, 224, 240);
+                    height: 100%;
 
                     .h-item {
                         font-weight: 400;
@@ -274,7 +292,7 @@
                     }
 
                     .h-item.active {
-                        border-left-color: rgb(80, 108, 240);
+                        border-left-color: #006266;
                         background-color: rgb(255, 255, 255);
                     }
                 }
@@ -285,6 +303,16 @@
                     :after,
                     :before {
                         border: 0 solid #e5e7eb;
+                    }
+
+                    .border-dash {
+                        border-bottom-width: 1px;
+                        border-style: dashed;
+                        border-color: rgb(209, 213, 219);
+                    }
+
+                    .border-dash:last-child {
+                        border-bottom: none;
                     }
 
                     .tab-pane {
@@ -303,7 +331,8 @@
                                 overflow: hidden;
                                 word-break: break-word;
                                 line-height: 24px;
-                                font-weight: 600;
+                                font-weight: 300;
+                                font-size: 1.3em;
                             }
 
                             .header-detail {
@@ -326,6 +355,28 @@
                             flex-direction: column;
                             padding-left: 2rem;
 
+                            span {
+                                overflow: hidden;
+                                word-break: break-word;
+                                margin-top: 0;
+                                margin-bottom: 0;
+                            }
+
+                            .text-xs {
+                                font-size: .75rem;
+                                line-height: 16px;
+                            }
+
+                            .text-right {
+                                text-align: right;
+                                color: inherit;
+                            }
+
+                            .text-sm {
+                                font-size: .875rem;
+                                line-height: 20px;
+                            }
+
                             .item-header {
                                 padding-top: .75rem;
                                 padding-bottom: .75rem;
@@ -340,20 +391,25 @@
 
                                 .image-icon {
                                     width: 0.875rem;
+
+                                    img {
+                                        object-fit: cover;
+                                        width: 0.875rem;
+                                        height: 0.875rem;
+                                        vertical-align: middle;
+                                        border: 0px;
+                                        border-radius: 0rem;
+                                    }
+
+                                    .collapse-icon-down {
+                                        display: none;
+                                    }
                                 }
 
                                 .description {
                                     display: flex;
                                     flex-direction: column;
                                     gap: .25rem;
-
-                                    span {
-                                        overflow: hidden;
-                                        word-break: break-word;
-                                        font-weight: 400;
-                                        margin-top: 0;
-                                        margin-bottom: 0;
-                                    }
 
                                     .text-primary {
                                         font-size: .75rem;
@@ -373,6 +429,32 @@
                                     }
                                 }
                             }
+
+                            .item-detail {
+                                padding-left: 1.5rem;
+                                display: flex;
+                                flex-direction: column;
+
+                                .item-link {
+                                    padding-top: .75rem;
+                                    padding-bottom: .75rem;
+                                    background: transparent;
+
+                                    .item-link-title {
+                                        gap: .75rem;
+                                        align-items: center;
+                                        grid-template-columns: 16px 1fr;
+                                        display: grid;
+
+                                        .text-grid {
+                                            display: grid;
+                                            grid-template-columns: 1fr auto;
+                                            gap: 1rem;
+                                            padding-right: 1rem;
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -380,11 +462,124 @@
         }
     }
 
-    .items-center {
-        align-items: center;
+    .course-detail-section-4 {
+        background-image: linear-gradient(180deg, #282781 0%, #00a5bf 100%) !important;
+        padding-top: 90px;
+        padding-bottom: 80px;
+        position: relative;
+
+        h2,
+        span,
+        p {
+            color: whitesmoke;
+        }
+
+        .et_pb_top_inside_divider {
+            background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI0MHB4IiB2aWV3Qm94PSIwIDAgMTI4MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iI2VhZWFlYSI+PHBhdGggZD0iTTAgNTEuNzZjMzYuMjEtMi4yNSA3Ny41Ny0zLjU4IDEyNi40Mi0zLjU4IDMyMCAwIDMyMCA1NyA2NDAgNTcgMjcxLjE1IDAgMzEyLjU4LTQwLjkxIDUxMy41OC01My40VjBIMHoiIGZpbGwtb3BhY2l0eT0iLjMiLz48cGF0aCBkPSJNMCAyNC4zMWM0My40Ni01LjY5IDk0LjU2LTkuMjUgMTU4LjQyLTkuMjUgMzIwIDAgMzIwIDg5LjI0IDY0MCA4OS4yNCAyNTYuMTMgMCAzMDcuMjgtNTcuMTYgNDgxLjU4LTgwVjBIMHoiIGZpbGwtb3BhY2l0eT0iLjUiLz48cGF0aCBkPSJNMCAwdjMuNEMyOC4yIDEuNiA1OS40LjU5IDk0LjQyLjU5YzMyMCAwIDMyMCA4NC4zIDY0MCA4NC4zIDI4NSAwIDMxNi4xNy02Ni44NSA1NDUuNTgtODEuNDlWMHoiLz48L2c+PC9zdmc+);
+            background-size: 50% 40px;
+            top: 0;
+            height: 40px;
+            z-index: 1;
+            transform: scale(-1, 1);
+            background-color: transparent;
+            position: absolute;
+            pointer-events: none;
+            width: 100%;
+            left: 0;
+            right: 0;
+            display: block;
+        }
+
+        .row_pd {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .detail {
+            width: 47.25%;
+
+            .item-for {
+                margin-bottom: 5.82%;
+                font-size: medium;
+                font-weight: 300;
+
+                .et_pb_main_blurb_image {
+                    width: 32px;
+                    display: table-cell;
+                    line-height: 0;
+
+                    span {
+                        width: 40px;
+                        display: block;
+                        margin: auto;
+
+                        img {
+                            width: inherit;
+                        }
+                    }
+                }
+
+                .et_pb_blurb_container {
+                    text-align: left;
+                    padding-left: 15px;
+                    display: table-cell;
+                    vertical-align: top;
+
+                    p:last-of-type {
+                        padding-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        .image-detail {
+            width: 47.25%;
+
+            span {
+                display: inline-block;
+                position: relative;
+                max-width: 100%;
+
+                img {
+                    position: relative;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.items-center {
+    align-items: center;
+}
+
+.nav-pills .nav-link.active {
+    color: black;
+}
+
+.text-gray-primary {
+    color: rgb(99, 115, 129);
+}
+
+.collapse:not(.show) {
+    display: none !important;
+}
+
+.nav-link,
+.text-primary {
+    color: #006266 !important;
+}
+
+.collapsed {
+    .collapse-icon-up {
+        display: none;
     }
 
-    .nav-pills .nav-link.active {
-        color: black;
+    .collapse-icon-down {
+        display: block !important;
     }
+}
+
+.colorlib-heading h1.heading-big {
+    z-index: 1;
 }
